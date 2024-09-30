@@ -2,6 +2,6 @@
 
 
 This is project **NANO** containing 
-_*Raad het getal
-*Galgje
-*Main menu_
+*_Raad het getal_
+*_Galgje_
+*_Main menu_
