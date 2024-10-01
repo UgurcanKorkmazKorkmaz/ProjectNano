@@ -2,9 +2,10 @@ import random
 
 #bepaald door een input van welke file er een random woord van gekozen word
 def woord_kiezer(difficulty):
-    file = open(f'Difficultys/{difficulty}.txt')
+    file = open(f'Galgje/Difficultys/{difficulty}.txt')
     woorden = file.readlines()
     file.close()
+
 
     randomwoorden = []
 
@@ -33,10 +34,12 @@ def galgje_game(difficulty):
         else:
             pogingen += 1
 
+#galgje_game(input('Welke moelijkheid wil je?: '))
 
 
 
-galgje_game(input('Welke moelijkheid wil je?: '))
+
+
 
 
 
