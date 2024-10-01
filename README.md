@@ -7,7 +7,8 @@ Dit is mijn _Project Nano_, met erin:
 
 Ik zal hieronder mijn progressie, aanpassingen in mijn code en bronnen met timestamps toelichten:
 
-**30-09-2024**
+
+**30-09-2024:**
 - Mijn Main Menu functie doet het niet meer omdat de py.file waaruit ik de functie wil callen 
 - niet in dezelfde directory ziet. Hiervoor zal ik informatie zoeken over import en from.
 - Ik wil meer comments toevoegen in Main Menu en Galgje moet ook comments krijgen.
@@ -19,7 +20,8 @@ Ik heb deze link: https://stackoverflow.com/questions/20309456/how-do-i-call-a-f
 gebruikt om te kijken hoe ik functies oproep die in een andere directory zitten. Ik heb deze informatie bij
 main menu.py toegepast.
 
-**01-10-2024**
+**01-10-2024:**
+
 Ik heb de Main Menu aangepast + galgje aangepast zodat je een moeilijkheid kan invoeren en de bijhorende file
 met woorden zal gaan openen. Deze zijn easy, normal , hard, impossible.
 Als je iets anders invoert krijg je wel een error. Ik zou dit kunnen voorkomen met een While loop, maar
