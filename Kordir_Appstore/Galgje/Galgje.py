@@ -6,9 +6,7 @@ def woord_kiezer(difficulty):
     woorden = file.readlines()
     file.close()
 
-
     randomwoorden = []
-
     for woord in woorden:
         randomwoorden.append(woord)
     woord = random.choice(randomwoorden)
@@ -34,7 +32,6 @@ def galgje_game(difficulty):
         else:
             pogingen += 1
 
-#galgje_game(input('Welke moelijkheid wil je?: '))
 
 
 

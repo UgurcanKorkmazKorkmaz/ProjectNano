@@ -32,5 +32,14 @@ ik de app via main menu wil runnen moet ik ook het galgje directory verwijzen. D
 Galgje werkt nu op het minimale. Ik ga het nu uitwerkend door moeilijkheden toe te voegen en/of een api
 wat random woorden van het internet afhaalt. 
 
+**10-10-2024**
+Ik heb de main menu aangepast naar alleen galgje en raad het getal.
+Ik ga niet voor XL.
+Ik heb de printstatement over de appstore en de opties in de whileloop gebracht.
+Ik heb exceptions toegepast voor galgje en raad het getal, zodat er alleen cijfers ingetypt kunnen worden.
+
+**11-10-2024**
+
+
 
 
