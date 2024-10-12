@@ -38,8 +38,8 @@ Ik ga niet voor XL.
 Ik heb de printstatement over de appstore en de opties in de whileloop gebracht.
 Ik heb exceptions toegepast voor galgje en raad het getal, zodat er alleen cijfers ingetypt kunnen worden.
 
-**11-10-2024**
-
+**12-10-2024**
+Galgje ga ik vanaf vers opbouwen. Ik ben er bijna tot een werkende galgje. Gelukkig.
 
 
 

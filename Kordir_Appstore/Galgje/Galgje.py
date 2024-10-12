@@ -1,50 +1,42 @@
 import random
 
-#bepaald door een input van welke file er een random woord van gekozen word
-def woord_kiezer(difficulty):
-    file = open(f'Galgje/Difficultys/{difficulty}.txt')
-    woorden = file.readlines()
+#deze functie leest een moeilijkheid file als een list en returned hieruit een willekeurige woord.
+def randomwoord(moeilijkheid):
+    file = open(f'Difficultys/{moeilijkheid}.txt')
+    woorden = file.read().split()
     file.close()
 
-    randomwoorden = []
-    for woord in woorden:
-        randomwoorden.append(woord)
-    woord = random.choice(randomwoorden)
+    woord = random.choice(woorden)
     return woord
 
+#deze functie returned de pogingen voor de gekozen difficulty.
+def pogingen(moeilijkheid):
+    pogingen = {"easy":2 , "normal":3 , "hard":4 , "impossible":5}
+    return pogingen[moeilijkheid]
 
-#bepaald qua de moeilijkheidsgraad hoeveel pogingen de user heeft om het woord te raden
-def aantal_pogingen(difficulty):
-    #ik ga hier gebruik maken van een dictionary met als key de moeilijkheid en als value de aantal pogingen
-    return
+def galgje_game(moeilijkheid):
+    totaal_pogingen = pogingen(moeilijkheid)
+    woord = randomwoord(moeilijkheid)
+    pogingcounter = 0
+    print(woord)
+    geradenletterscorrect = []
+    geradenlettersfout = []
 
-#main game van galgje, waar een user een willekeurig woord gekozen door woord_kiezer() kan raden.
-def galgje_game(difficulty):
-    woord = woord_kiezer(difficulty)
-    pogingen = 1
-    while True:
+    while totaal_pogingen > pogingcounter:
         poging = input('Wat raad je?: ')
-        if poging == woord:
-            print('Je hebt gewonnen!')
-        elif pogingen == 2:
-            print('Je hebt verloren')
+        if poging in (geradenletterscorrect or geradenlettersfout):
+            print('Je hebt deze letter al geraden!')
+        elif poging == woord:
+            print(f'Goedzo! {woord} was het woord. '
+                  f'Je had nog {totaal_pogingen - pogingcounter} pogingen over.')
             break
+        elif poging in woord:
+            print(f'Goedzo! {poging} zit in het woord.\n')
+            geradenletterscorrect.append(poging)
         else:
-            pogingen += 1
+            print(f'Jammer, {poging} zit niet in het woord.'
+                  f'Je hebt nog {totaal_pogingen - pogingcounter - 1} poging(en) over')
+            pogingcounter += 1
+            geradenlettersfout.append(poging)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+galgje_game(input('Welke moeilijkheid kies je?: '))
