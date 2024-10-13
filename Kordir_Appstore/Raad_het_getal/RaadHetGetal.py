@@ -16,17 +16,17 @@ def highscore(naam , aantal_pogingen , getal):
     }
     #Er wordt geprobeerd een json file te openen en te lezen. De data word geupdate met de speler van deze sessie.
     try:
-        with open('Raad_het_getal/highscores.json', 'r') as json_file:
+        with open('Raad_het_getal/highscoresRHG.json', 'r') as json_file:
             alle_highscores_spelers = json.load(json_file)
         alle_highscores_spelers.update(highscore_speler)
 
         # Daarna wordt de updated data geschreven in dezelfde json file.
-        with open('Raad_het_getal/highscores.json' , 'w') as json_file:
+        with open('Raad_het_getal/highscoresRHG.json' , 'w') as json_file:
             json.dump(alle_highscores_spelers , json_file , indent=2)
 
     #als de json file nog niet bestaat wordt deze aangemaakt. Alleen de data van de user van deze sessie wordt geschreven
     except FileNotFoundError:
-        with open('Raad_het_getal/highscores.json' , 'w') as json_file:
+        with open('Raad_het_getal/highscoresRHG.json' , 'w') as json_file:
             json.dump(highscore_speler , json_file , indent=2)
 
 #for loop die naloopt of het getal geraden is of dat de pogingen op zijn.

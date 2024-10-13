@@ -58,7 +58,7 @@ while True:
             #we proberen een file te opening in dir Raad_het_getal. Als deze bestaat en geldige json data bevat wordt
             #er dmv een for-loop een print uitgedraaid van alle spelers en hun data.
             try:
-                with open('Raad_het_getal/highscores.json', 'r') as json_file:
+                with open('Raad_het_getal/highscoresRHG.json', 'r') as json_file:
                     data = json.load(json_file)
                     for speler in data:
                         print(f'\nSpeler {speler}\n. '
@@ -72,7 +72,7 @@ while True:
 
             #mocht de json file niet bestaan dan zorgt onderstaande code ervoor dat de file wordt aangemaakt.
             except FileNotFoundError:
-                with open('Raad_het_getal/highscores.json', 'w') as json_file:
+                with open('Raad_het_getal/highscoresRHG.json', 'w') as json_file:
                     json.dump({}, json_file, indent=2)
 
         #deze block code is voor de game Galgje
@@ -81,7 +81,7 @@ while True:
             # we proberen een file te opening in dir Raad_het_getal. Als deze bestaat en geldige json data bevat wordt
             # er dmv een for-loop een print uitgedraaid van alle spelers en hun data.
             try:
-                with open('Galgje/highscores.json' , 'r') as json_file:
+                with open('Galgje/highscoresGalgje.json', 'r') as json_file:
                     data = json.load(json_file)
                     for speler in data:
                         print(f'\nSpeler {speler}\n. '
@@ -96,7 +96,7 @@ while True:
 
             # mocht de json file niet bestaan dan zorgt onderstaande code ervoor dat de file wordt aangemaakt.
             except FileNotFoundError:
-                with open('Galgje/highscores.json', 'w') as json_file:
+                with open('Galgje/highscoresGalgje.json', 'w') as json_file:
                     json.dump({} , json_file , indent=2)
 
     # Dit is de if statement waar break wordt toegepast om de loop uit te gaan.
