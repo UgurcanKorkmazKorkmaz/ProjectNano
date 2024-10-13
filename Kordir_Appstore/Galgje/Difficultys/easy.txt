@@ -4,3 +4,5 @@ spel
 bal
 kat
 hond
+vuur
+ijs

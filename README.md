@@ -41,5 +41,10 @@ Ik heb exceptions toegepast voor galgje en raad het getal, zodat er alleen cijfe
 **12-10-2024**
 Galgje ga ik vanaf vers opbouwen. Ik ben er bijna tot een werkende galgje. Gelukkig.
 
+**13-10-2024**
+Ik heb de main menu bijgewerkt, galgje bijgewerkt en ik ga raad het getal bijwerken.
+Ik zit nu de code zelf te testen en allemaal exceptions etc in de code te verwerken.
+
+
 
 
