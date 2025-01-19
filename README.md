@@ -7,7 +7,7 @@ The following games and functions are in this project:<br>
 	highscores           an option to view highscores. records things such as the playername, score, date.<br>
 	main menu            a main menu to select all the above.<br>
 
-
+ 
 This project is entirely programmed in python and makes use of the json library to save the highscores. 
 the words for the wordguesser games are predetermined in text files corresponding to the difficulty.
 
