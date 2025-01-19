@@ -1,4 +1,4 @@
-This is my project voor a schoolassignment where i had to program an appstore which could be controlled by the CLI.
+This is my project voor a schoolassignment where i had to program an appstore which could be controlled by the CLI.<br>
 The following games and functions are in this project:<br>
   -Galgje               where you try guessing a random word selected from 4 different difficultys.<br>
   -Raad het getal       where you try to guess a random number.<br>
