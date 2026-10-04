@@ -1,4 +1,4 @@
-This is my project voor a schoolassignment where i had to program an appstore which could be controlled by the CLI.
+This is my project voor a schoolassignment where i had to program an appstore which could be controlled in a Command Line Interface.
 
 The following games and functions are in this project:
 - Galgje               where you try guessing a random word selected from 4 different difficultys.
@@ -7,6 +7,6 @@ The following games and functions are in this project:
 - main menu            a main menu to select all the above.
 
 
-This project is entirely programmed in python and makes use of the json library to save the highscores.<br>
+This project is entirely programmed in python and makes use of the standard json library to save the highscores.<br>
 The words for the wordguesser games are predetermined in text files corresponding to the difficulty.
 
